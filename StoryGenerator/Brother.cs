@@ -9,6 +9,10 @@ namespace StoryGenerator
     class Brother : ICharacter
     {
         private string[] _article;
+        private string[] _noun;
+        private string[] _verb;
+        private string[] _preposition;
+
         public string[] Article
         {
             get
@@ -17,7 +21,6 @@ namespace StoryGenerator
             }
         }
 
-        private string[] _noun;
         public string[] Noun
         {
             get
@@ -25,7 +28,7 @@ namespace StoryGenerator
                 return _noun;
             }
         }
-        private string[] _verb;
+
         public string[] Verb
         {
             get
@@ -34,7 +37,6 @@ namespace StoryGenerator
             }
         }
 
-        private string[] _preposition;
         public string[] Preposition
         {
             get

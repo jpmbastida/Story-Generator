@@ -27,7 +27,6 @@ namespace StoryGenerator
                 _characterInStory.Noun[random.Next(0, 5)] + ". ";
 
             sentence = sentence[0].ToString().ToUpper() + sentence.Substring(1);
-
             return sentence;
         }
     }
