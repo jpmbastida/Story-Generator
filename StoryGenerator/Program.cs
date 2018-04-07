@@ -13,7 +13,6 @@ namespace StoryGenerator
         {
             StringBuilder storyBuilder = new StringBuilder();
             Random random = new Random();
-            Console.WriteLine("Once upon a time in Mexico...\n");
             int numberOfParagraphs = random.Next(1, 5);
 
             for (int i = 0; i < numberOfParagraphs; i++)
@@ -28,7 +27,7 @@ namespace StoryGenerator
                 }
                 storyBuilder.Append("\n\n");
             }
-            Console.WriteLine(storyBuilder);
+            Console.WriteLine("Once upon a time in Mexico...\n\n" + storyBuilder);
         }
 
         private static ICharacter selectCharacterRole(int caracter)
