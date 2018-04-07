@@ -22,17 +22,16 @@ namespace StoryGenerator
                 for (int j = 0; j < numberOfSentences; j++)
                 {
                     StoryGenerator characterGenerator = new StoryGenerator(selectCharacterRole(random.Next(1, 5)));
-                    string result = characterGenerator.MakeParagraph();
-                    storyBuilder.Append(result);
+                    storyBuilder.Append(characterGenerator.MakeParagraph());
                 }
                 storyBuilder.Append("\n\n");
             }
             Console.WriteLine("Once upon a time in Mexico...\n\n" + storyBuilder);
         }
 
-        private static ICharacter selectCharacterRole(int caracter)
+        private static ICharacter selectCharacterRole(int character)
         {
-            switch (caracter)
+            switch (character)
             {
                 case 1: return new Dad();
                 case 2: return new Mom();
