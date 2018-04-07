@@ -13,7 +13,7 @@ namespace StoryGenerator
         {
             StringBuilder storyBuilder = new StringBuilder();
             Random random = new Random();
-            int numberOfParagraphs = random.Next(1, 5);
+            int numberOfParagraphs = random.Next(1, 7);
 
             for (int i = 0; i < numberOfParagraphs; i++)
             {
@@ -21,7 +21,7 @@ namespace StoryGenerator
 
                 for (int j = 0; j < numberOfSentences; j++)
                 {
-                    StoryGenerator characterGenerator = new StoryGenerator(selectCharacterRole(random.Next(1, 5)));
+                    StoryGenerator characterGenerator = new StoryGenerator(selectCharacterRole(random.Next(1, 6)));
                     storyBuilder.Append(characterGenerator.MakeParagraph());
                 }
                 storyBuilder.Append("\n\n");

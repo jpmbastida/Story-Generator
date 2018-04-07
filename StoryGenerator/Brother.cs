@@ -46,7 +46,7 @@ namespace StoryGenerator
         public Brother()
         {
             _article = new string[] { "her", "our", "his", "my", "their" };
-            _noun = new string[] { "a girl", "a dog", "a woman", "a car", "a bar" };
+            _noun = new string[] { "girl", "dog", "woman", "car", "bar" };
             _verb = new string[] { "was", "walked", "went", "jumped", "talked" };
             _preposition = new string[] { "to", "from", "over", "under", "on" };
         }
