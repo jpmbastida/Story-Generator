@@ -38,7 +38,7 @@ namespace StoryGenerator
                 case 3: return new Grandma();
                 case 4: return new Sister();
                 case 5: return new Brother();
-                default: throw new Exception();
+                default: return new Grandma();
             }
         }
     }
